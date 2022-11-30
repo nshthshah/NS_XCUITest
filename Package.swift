@@ -20,7 +20,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "NS_XCUITest",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources"),
         .testTarget(
             name: "NS_XCUITestTests",
             dependencies: ["NS_XCUITest"]),
